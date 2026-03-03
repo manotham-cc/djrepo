@@ -5,6 +5,7 @@ from main.models import Company, Resume, Skill, Education, PreviousJob, Rating
 class CompanyAdmin(admin.ModelAdmin):
     list_display = ('name', 'location')
 
+
 @admin.register(Resume)
 class ResumeAdmin(admin.ModelAdmin):
     list_display = ('owner', 'success_summary')

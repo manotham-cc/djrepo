@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const [resumes, setResumes] = useState([])
 
+  
   useEffect(() => {
     // Fetch ผ่าน /api ซึ่ง Caddy จะ Route ไปหา Backend ให้
     fetch('/api/resumes/') 
