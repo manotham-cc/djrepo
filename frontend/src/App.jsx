@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   const [resumes, setResumes] = useState([])
 
-  
+
   useEffect(() => {
     // Fetch ผ่าน /api ซึ่ง Caddy จะ Route ไปหา Backend ให้
     fetch('/api/resumes/') 
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">Resume Hub</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">Resume Hubs</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {resumes.map(resume => (
           <div key={resume.id} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
